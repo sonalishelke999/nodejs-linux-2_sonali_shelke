@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: 'node|18-lts'
+          node-version: '18.x'
 
       - name: npm install, build, and test
         run: |
@@ -31,7 +31,7 @@ jobs:
         run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: node-app
           path: release.zip
@@ -59,4 +59,4 @@ jobs:
           app-name: 'appservicespecialistossnodejslinux2z4zkpmil6meb2'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_ED7C0B1DF78843C296C6F5927026C48F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_63EDA5D9FA904936BBD6A2B7A53229C3 }}
