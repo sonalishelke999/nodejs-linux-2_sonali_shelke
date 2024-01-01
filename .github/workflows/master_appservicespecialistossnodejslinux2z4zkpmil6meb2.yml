@@ -59,4 +59,4 @@ jobs:
           app-name: 'appservicespecialistossnodejslinux2z4zkpmil6meb2'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_63EDA5D9FA904936BBD6A2B7A53229C3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CC64798A74F541F392600B13DB381B9D }}
